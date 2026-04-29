@@ -1,0 +1,135 @@
+.roommate-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(196, 98, 45, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.roommate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.roommate-card__header {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.roommate-card__avatar-wrap {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.roommate-card__avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--cream-dark);
+}
+
+.roommate-card__personality {
+    position: absolute;
+    bottom: -4px;
+    right: -6px;
+    font-size: 0.62rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+}
+
+.roommate-card__personality--introvert {
+    background: #E8EEF8;
+    color: #3A5A9A;
+}
+
+.roommate-card__personality--extrovert {
+    background: #FDE8D8;
+    color: #C4622D;
+}
+
+.roommate-card__personality--ambivert {
+    background: #E8F4E8;
+    color: #3A7A3A;
+}
+
+.roommate-card__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.roommate-card__name {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.roommate-card__occupation {
+    font-size: 0.82rem;
+    color: var(--warm-gray);
+}
+
+.roommate-card__score-wrap {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.roommate-card__score-bar {
+    height: 6px;
+    background: var(--cream-dark);
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.roommate-card__score-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s ease;
+}
+
+.roommate-card__score-text {
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.roommate-card__bio {
+    font-size: 0.85rem;
+    color: var(--charcoal-light);
+    line-height: 1.6;
+}
+
+.roommate-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.roommate-card__tag {
+    background: var(--cream-dark);
+    color: var(--charcoal-light);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.74rem;
+    font-weight: 500;
+}
+
+.roommate-card__cta {
+    align-self: flex-start;
+    padding: 8px 20px;
+    font-size: 0.82rem;
+    margin-top: 4px;
+}

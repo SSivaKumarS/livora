@@ -1,0 +1,217 @@
+.results-loading {
+    min-height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.results-loading__sub {
+    font-size: 0.85rem;
+    color: var(--warm-gray);
+    text-align: center;
+}
+
+.results {
+    padding: 60px 0 100px;
+}
+
+
+/* Hero */
+
+.results__hero {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 56px;
+    background: var(--card-bg);
+    border-radius: var(--radius-xl);
+    padding: 40px 48px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(196, 98, 45, 0.07);
+    flex-wrap: wrap;
+}
+
+.results__score-wrap {
+    flex-shrink: 0;
+}
+
+.results__score-ring {
+    width: 140px;
+    height: 140px;
+}
+
+.results__score-arc {
+    transition: stroke-dashoffset 1.2s ease;
+}
+
+.results__score-num {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.results__score-label-svg {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+}
+
+.results__hero-text {
+    flex: 1;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.results__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 900;
+    color: var(--charcoal);
+    line-height: 1.2;
+}
+
+.results__subtitle {
+    font-size: 0.95rem;
+    color: var(--warm-gray);
+    line-height: 1.65;
+}
+
+.results__pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.results__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--cream-dark);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--charcoal-light);
+}
+
+.results__pill-key {
+    font-weight: 700;
+    color: var(--terracotta);
+    text-transform: capitalize;
+}
+
+
+/* Tabs */
+
+.results__tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid var(--cream-dark);
+    padding-bottom: 0;
+}
+
+.results__tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: none;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--warm-gray);
+    transition: var(--transition);
+    position: relative;
+    bottom: -2px;
+    border: 2px solid transparent;
+    border-bottom: none;
+}
+
+.results__tab:hover {
+    color: var(--charcoal);
+    background: var(--cream-dark);
+}
+
+.results__tab--active {
+    color: var(--terracotta);
+    background: var(--cream);
+    border-color: var(--cream-dark);
+    border-bottom-color: var(--cream);
+}
+
+.results__tab-count {
+    background: var(--terracotta);
+    color: white;
+    border-radius: 20px;
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.results__section {
+    animation: fadeIn 0.35s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.results__grid {
+    display: grid;
+    gap: 24px;
+}
+
+.results__grid--roommates {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.results__grid--pgs {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.results__cta-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--cream-dark);
+}
+
+.results__cta-note {
+    font-size: 0.875rem;
+    color: var(--warm-gray);
+}
+
+.results__retake {
+    text-align: center;
+    margin-top: 48px;
+}
+
+@media (max-width: 600px) {
+    .results__hero {
+        padding: 24px;
+        gap: 24px;
+    }
+    .results__tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .results__tab {
+        white-space: nowrap;
+        padding: 10px 16px;
+    }
+}
