@@ -1,65 +1,61 @@
-# LiveMatch — livora
+# Livora — Modern Coliving & Roommate Finder
 
-LiveMatch is a modern **PG & Roommate Finder Web Application** built using **React + Vite + JavaScript + CSS**.  
-It helps students and working professionals discover the right PG stay and compatible roommates based on lifestyle preferences, budget, and comfort needs.
+Livora is a premium frontend web application designed to help users discover **coliving spaces, rental stays, and compatible roommates** through a modern and intuitive interface.
+
+Live Demo: https://livora-sandy.vercel.app/
 
 ---
 
 ## Overview
 
-LiveMatch is designed to simplify the PG and roommate search experience with a clean UI, smart filters, comparison tools, and preference-based recommendations.
+Livora is a lifestyle-first housing discovery platform built with a focus on:
+
+- Clean UI/UX
+- Smart filtering experience
+- Startup-grade design
+- Mobile-first responsiveness
+
+The platform aims to simplify how students and professionals find comfortable living spaces and like-minded roommates.
 
 ---
 
 ## Features
 
-### Smart PG Search
-- Browse PG listings in a responsive card layout
-- Search by city, area, rent, gender preference, and amenities
-- Sort by price, rating, and popularity
-- Filter listings instantly
+### Landing Experience
+- Modern hero section with search interface
+- Featured listings and curated stays
+- Benefits and "How it works" sections
+- Testimonials and FAQ layout
+- Strong call-to-action design
 
-### Roommate Matching
-- Lifestyle quiz for preference-based suggestions
-- Match users with similar habits and routines
-- Compatibility score results
+### Listings System
+- Browse rental and coliving spaces
+- Card-based layout
+- Clean grid UI
+- Sorting and filtering structure (UI level)
 
-### Favorites System
-- Save preferred PG listings
-- Manage wishlist anytime
-- Persistent storage with LocalStorage
+### Roommate Discovery
+- Lifestyle-based matching concept
+- Compatibility-focused approach
+- Multi-step user flow design
 
-### Dark Mode
-- Light and dark theme toggle
-- Theme preference saved automatically
-
-### Compare PGs
-- Compare multiple PGs side by side
-- View pricing, facilities, ratings, occupancy
-
-### PG Detail Modal
-- Full PG information popup
-- Facilities and room details
-- Contact / enquiry button
-- Quick view without page reload
-
-### Responsive UI
-- Mobile-first layout
-- Tablet and desktop optimized
-- Smooth modern interactions
+### Responsive Design
+- Fully responsive layout
+- Optimized for mobile, tablet, and desktop
+- Smooth UI transitions
 
 ---
 
 ## Tech Stack
 
 | Technology | Purpose |
-|-----------|---------|
-| React JSX | Component-based UI |
-| JavaScript | Logic and state management |
-| CSS3 | Styling and responsive design |
-| React Router DOM | Routing and navigation |
-| Vite | Fast development environment |
-| LocalStorage | Persist favorites and theme |
+|-----------|--------|
+| React (JSX) | UI Development |
+| JavaScript | Application Logic |
+| Vite | Fast Build Tool |
+| CSS | Styling |
+| React Router DOM | Routing |
+| Vercel | Deployment |
 
 ---
 
@@ -67,34 +63,10 @@ LiveMatch is designed to simplify the PG and roommate search experience with a c
 
 ```bash
 src/
-│── assets/
-
 │── components/
-│   ├── FilterBar.jsx
-│   ├── FilterBar.css
-│   ├── Loader.jsx
-│   ├── Loader.css
-│   ├── Navbar.jsx
-│   ├── Navbar.css
-│   ├── PGCard.jsx
-│   ├── PGCard.css
-│   ├── RoommateCard.jsx
-│   └── RoommateCard.css
-
-│── data/
-│   ├── pgData.js
-│   └── roommateData.js
-
 │── pages/
-│   ├── Home.jsx
-│   ├── Home.css
-│   ├── Listings.jsx
-│   ├── Listings.css
-│   ├── Quiz.jsx
-│   ├── Quiz.css
-│   ├── Results.jsx
-│   └── Results.css
-
+│── data/
+│── assets/
 │── App.jsx
 │── main.jsx
 │── index.css
